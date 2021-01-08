@@ -13,6 +13,7 @@ $ npm install -g truffle
 $ npm install -g ganache-cli
 $ cd DeFi_example
 $ npm init
+$ npm install
 ```
 
 ## Usage

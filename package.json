@@ -1,8 +1,8 @@
 {
-  "name": "defi-tutorial",
+  "name": "defi_example",
   "version": "0.1.0",
   "description": "DeFi Token Staking App",
-  "author": "gregory@dappuniversity.com",
+  "author": "alejoacos@gmail.com",
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
@@ -36,5 +36,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejoacosta74/DeFi_example.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejoacosta74/DeFi_example/issues"
+  },
+  "homepage": "https://github.com/alejoacosta74/DeFi_example#readme"
 }
