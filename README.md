@@ -33,6 +33,8 @@ On another terminal, start the web server:
 $ npm run start
 ```
 
+To use the Web DeFi APP go to http://localhost:3000/ in your browser
+
 ## Dependencies
 
 You will need to install MetaMask in your browser in order to interact with the React Web App!!
