@@ -28,3 +28,11 @@ $ truffle compile
 $ truffle migrate
 ```
 
+On another terminal, start the web server:
+```bash
+$ npm run start
+```
+
+## Dependencies
+
+You will need to install MetaMask in your browser in order to interact with the React Web App!!
