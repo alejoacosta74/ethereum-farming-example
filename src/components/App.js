@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Web3 from 'web3'
 import DaiToken from '../abis/DaiToken.json'
-import DappToken from '../abis/DappToken.json'
+import ARGToken from '../abis/ARGToken.json'
 import TokenFarm from '../abis/TokenFarm.json'
 import Navbar from './Navbar'
 import Main from './Main'
@@ -33,15 +33,15 @@ class App extends Component {
       window.alert('DaiToken contract not deployed to detected network.')
     }
 
-    // Load DappToken
-    const dappTokenData = DappToken.networks[networkId]
-    if(dappTokenData) {
-      const dappToken = new web3.eth.Contract(DappToken.abi, dappTokenData.address)
-      this.setState({ dappToken })
-      let dappTokenBalance = await dappToken.methods.balanceOf(this.state.account).call()
-      this.setState({ dappTokenBalance: dappTokenBalance.toString() })
+    // Load argToken
+    const argTokenData = ARGToken.networks[networkId]
+    if(argTokenData) {
+      const argToken = new web3.eth.Contract(ARGToken.abi, argTokenData.address)
+      this.setState({ argToken })
+      let argTokenBalance = await argToken.methods.balanceOf(this.state.account).call()
+      this.setState({ argTokenBalance: argTokenBalance.toString() })
     } else {
-      window.alert('DappToken contract not deployed to detected network.')
+      window.alert('ARG Token contract not deployed to detected network.')
     }
 
     // Load TokenFarm
@@ -92,10 +92,10 @@ class App extends Component {
     this.state = {
       account: '0x0',
       daiToken: {},
-      dappToken: {},
+      argToken: {},
       tokenFarm: {},
       daiTokenBalance: '0',
-      dappTokenBalance: '0',
+      argTokenBalance: '0',
       stakingBalance: '0',
       loading: true
     }
@@ -108,7 +108,7 @@ class App extends Component {
     } else {
       content = <Main
         daiTokenBalance={this.state.daiTokenBalance}
-        dappTokenBalance={this.state.dappTokenBalance}
+        argTokenBalance={this.state.argTokenBalance}
         stakingBalance={this.state.stakingBalance}
         stakeTokens={this.stakeTokens}
         unstakeTokens={this.unstakeTokens}
