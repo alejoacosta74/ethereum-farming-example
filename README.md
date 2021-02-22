@@ -9,7 +9,7 @@ to investors that deposit money for a certain amount of time
 
 ## Web APP view
 
-![Screen shot](./docs/APPscreenshot.jpg)
+![Screen shot](./docs/APPscreenshot.png)
 
 ## Install
 
