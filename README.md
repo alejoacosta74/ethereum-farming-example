@@ -5,7 +5,14 @@ Solidity and javascript based project for deployment and testing of DeFi applica
 This project implements a DeFi application consisting of a "Farming contract" that issues new ARG coins 
 to investors that deposit money for a certain amount of time
 
+![Farming flow](./docs/FarmingExample.png)
+
+## Web APP view
+
+![Screen shot](./docs/APPscreenshot.jpg)
+
 ## Install
+
 Clone repository and install dependencies and devDependencies:
 
 ```bash
@@ -17,6 +24,7 @@ $ npm install
 ```
 
 ## Usage
+
 Start ganache-cli development ethereum network:
 ```bash
 $ ganache-cli &
@@ -44,3 +52,4 @@ $ truffle exec ./scripts/issue-token.js
 ## Dependencies
 
 You will need to install MetaMask in your browser in order to interact with the React Web App!!
+
