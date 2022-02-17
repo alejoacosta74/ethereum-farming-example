@@ -1,6 +1,6 @@
-# Ethereum DeFi example
+# DeFi farming example
 
-## Intro
+## Overview
 This project implements a DeFi application consisting of a "Farming contract" that issues new ARG coins 
 to investors that deposit money for a certain amount of time
 
